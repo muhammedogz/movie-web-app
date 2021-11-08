@@ -1,3 +1,44 @@
 .Header {
-	background-color: var(--color-main-bg);
+	margin: auto;
+}
+
+.Header-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Header-logo {
+	width: 5em;
+	padding: 1em;
+	align-self: baseline;
+	justify-self: flex-start;
+}
+
+.Header-ul {
+	list-style: none;
+	display: flex;
+
+	width: 100%;
+	margin: auto;
+	padding: 0;
+
+	justify-content: space-around;
+	justify-self: center;
+	align-self: center;
+}
+
+.Header-ul li a {
+	text-decoration: none;
+	color: var(--color-primary);
+	font-size: 1.5em;
+}
+
+.Header-ul li a:hover,
+.Header-ul li a:focus {
+	border-bottom: 2px solid var(--color-secondary);
+}
+
+.Header-active {
+	border-bottom: 2px solid var(--color-secondary);
 }

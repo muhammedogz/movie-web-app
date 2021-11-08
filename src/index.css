@@ -1,5 +1,6 @@
 :root {
 	--color-primary: #ffffff;
+	--color-secondary: #ffc700;
 	--color-main-bg: #1c1a28;
 }
 
@@ -22,14 +23,11 @@ body {
  * Base styles
  */
 
-/* layout */
-.container {
-	width: 90%;
-	max-width: 1300px;
-	margin: auto;
-
-	border: 2px solid blue;
+img {
+	display: block;
+	max-width: 100%;
 }
+
 /* typography */
 
 h1 {
@@ -48,4 +46,13 @@ h3,
 p,
 li {
 	font-size: clamp(1rem, 1vw + 0.2rem, 1.35rem);
+}
+
+/* layout */
+.container {
+	width: 90%;
+	max-width: 1300px;
+	margin: auto;
+
+	border: 2px solid blue;
 }

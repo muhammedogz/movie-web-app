@@ -3,7 +3,13 @@ import "./Header.css"
 const Header = () => {
     return (
         <header className="Header">
-            <h1>Header</h1>
+            <nav className="Header-nav">
+                <img className="Header-logo" src={process.env.PUBLIC_URL + '/icon.png'} alt="maim logo"></img>
+                <ul className="Header-ul">
+                    <li><a className="Header-active" href="\#">Home</a></li>
+                    <li><a href="\#">About</a></li>
+                </ul>
+            </nav>
         </header>
     )
 }
