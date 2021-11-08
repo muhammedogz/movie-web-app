@@ -2,7 +2,7 @@
 	width: 10em;
 	margin: auto;
 
-	margin-top: 20px;
+	margin-block: 3em;
 
 	display: flex;
 	flex-direction: column;
@@ -10,12 +10,18 @@
 	justify-content: center;
 
 	position: relative;
+
+	cursor: pointer;
+
+	transform: scale(1);
+	transition: all 250ms ease-in-out;
 }
 
 .Movie-img {
 	width: 9em;
 	height: 15em;
 
+	border: 1px solid var(--color-primary);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 	object-fit: cover;
@@ -32,4 +38,9 @@
 
 .Movie-name {
 	bottom: 0;
+}
+
+.Movie:hover,
+.Movie:active {
+	transform: scale(1.2);
 }
