@@ -1,0 +1,22 @@
+.Hero {
+	height: 50vh;
+	background-image: url("../images/hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	background-blend-mode: multiply;
+	background-color: #20d31d41;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+}
+
+.Hero h1,
+.Hero p {
+	margin: 0.2em 0;
+}

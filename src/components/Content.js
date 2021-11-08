@@ -1,7 +1,9 @@
+import Hero from "./Hero"
+
 const Content = () => {
     return (
         <main>
-            <h1>Content</h1>
+            <Hero />
         </main>
     )
 }
