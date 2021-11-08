@@ -1,5 +1,10 @@
 .Footer {
 	background-color: rebeccapurple;
+	height: clamp(8vh, 8vh + 1vw, 11vh);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .Footer p {

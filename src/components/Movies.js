@@ -2,14 +2,20 @@ import Movie from './Movie'
 import "./Movies.css"
 
 const Movies = () => {
-    const saySomething = (something) => {
-        console.log(something);
-      };
       
-      const click = (e) => {
-          console.log(`e:`, e)
-        saySomething("element clicked");
-      };
+    const click = (e) => {
+        if (e.target.classList.contains("Movie") || e.target.parentElement.classList.contains("Movie"))
+        {
+            console.log("div movie clicked");
+        }
+        else
+        {
+            console.log(`e`, e)
+            console.log(`e.target`, e.target)
+            console.log(`e.target.parentElement`, e.target.parentElement)
+        }
+
+    };
 
     return (
         <div className="Movies container">
