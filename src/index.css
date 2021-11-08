@@ -17,6 +17,7 @@ body {
 		"Helvetica Neue", sans-serif;
 	background-color: var(--color-main-bg);
 	color: var(--color-primary);
+	line-height: 1.2;
 }
 
 /*
