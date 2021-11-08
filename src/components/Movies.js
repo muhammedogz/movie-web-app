@@ -4,17 +4,17 @@ import "./Movies.css"
 const Movies = () => {
       
     const click = (e) => {
-        if (e.target.classList.contains("Movie") || e.target.parentElement.classList.contains("Movie"))
-        {
-            console.log("div movie clicked");
-        }
-        else
-        {
-            console.log(`e`, e)
-            console.log(`e.target`, e.target)
-            console.log(`e.target.parentElement`, e.target.parentElement)
-        }
+        let target = null;
+        if (e.target.classList.contains("Movie"))
+            target = e.target;
+        else if ( e.target.parentElement.classList.contains("Movie"))
+            target = e.target.parentElement;
 
+        console.log(target);
+        if (!target.classList.contains("click"))
+            target.classList.add("click");
+        else
+            target.classList.remove("click");
     };
 
     return (
