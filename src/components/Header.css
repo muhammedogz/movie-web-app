@@ -1,9 +1,11 @@
 .Header {
 	position: fixed;
+	background-color: var(--color-nav-bg);
 	top: 0;
-	left: 5%;
-	right: 5%;
+	left: 0;
+	right: 0;
 	margin: auto;
+	z-index: 99;
 }
 
 .Header-nav {
@@ -22,6 +24,8 @@
 .Header-ul {
 	list-style: none;
 	display: flex;
+
+	font-weight: 700;
 
 	width: 100%;
 	margin: auto;
