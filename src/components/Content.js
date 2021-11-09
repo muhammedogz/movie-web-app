@@ -9,7 +9,7 @@ const Content = () => {
     useEffect(() => {
         const getMovies = async () => {
           const moviesFromServer = await fetchMovies(1)
-          console.log(`moviesFromServer`, moviesFromServer)
+          
           const temp = moviesFromServer.results.map(movie => {
               return {
                     id: movie.id,

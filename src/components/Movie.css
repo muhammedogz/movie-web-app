@@ -1,6 +1,7 @@
 .Movie {
 	width: 10em;
 	margin: auto;
+	background-image: url(https://image.tmdb.org/t/p/w500/{poster_path});
 
 	margin-block: 3em;
 
@@ -61,7 +62,7 @@
 
 .click {
 	z-index: 9999;
-	background-color: blue;
+	background: initial !important;
 	position: fixed;
 	inset: 0;
 	width: 100vw;
