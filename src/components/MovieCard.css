@@ -1,0 +1,11 @@
+.MovieCard {
+	z-index: 9999;
+	position: fixed;
+	inset: 0;
+
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center center;
+	background-color: var(--color-card-bg);
+	background-blend-mode: multiply;
+}
