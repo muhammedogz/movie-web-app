@@ -150,3 +150,19 @@
 	font-size: 0.7em;
 	font-weight: 700;
 }
+
+/* scroll bar styling */
+.MovieCard-casts::-webkit-scrollbar-track {
+	background-color: var(--color-main-bg);
+	width: 3px;
+}
+
+.MovieCard-casts::-webkit-scrollbar {
+	width: 1px;
+	background-color: var(--color-main-bg);
+}
+
+.MovieCard-casts::-webkit-scrollbar-thumb {
+	background-color: var(--color-secondary);
+	background-image: var(--color-card-bg);
+}
