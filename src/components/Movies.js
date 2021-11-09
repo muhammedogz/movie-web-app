@@ -1,3 +1,4 @@
+import { render } from '@testing-library/react';
 import Movie from './Movie'
 import "./Movies.css"
 
@@ -15,12 +16,15 @@ const Movies = () => {
             target.classList.add("click");
         else
             target.classList.remove("click");
+
+        render(<Movie />, document.getElementsByClassName("Movie")[0]);
     };
 
     return (
         <div className="Movies container">
             <h2>Popular Movies</h2>
             <div className="Movies-all">
+                
                 <Movie onclick={click}  />
                 <Movie onclick={click}  />
                 <Movie onclick={click}  />
