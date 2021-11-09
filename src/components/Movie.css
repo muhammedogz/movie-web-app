@@ -58,8 +58,3 @@
 .Movie:active {
 	transform: scale(1.2);
 }
-
-.click:hover,
-.click:active {
-	transform: scale(1);
-}
