@@ -10,10 +10,43 @@
 	background-blend-mode: multiply;
 }
 
+.MovieCard-close-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	z-index: 999999;
+
+	padding: 0.3em 1.2em;
+	margin: 1em;
+
+	text-align: center;
+
+	cursor: pointer;
+
+	border: none;
+	border: 2px solid var(--color-card-bg);
+	border-radius: 2em;
+	background-color: var(--color-main-bg);
+	color: var(--color-secondary);
+
+	font-size: 1.3em;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.MovieCard-close-btn:hover,
+.MovieCard-close-btn:focus {
+	background-color: var(--color-secondary);
+	color: var(--color-main-bg);
+}
+
 .MovieCard-container {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 95%;
+	height: 100%;
+	margin: auto;
 }
 
 .MovieCard-hero {
@@ -37,14 +70,15 @@
 }
 
 .MovieCard-img {
-	width: 80%;
+	width: 70%;
+	max-width: 300px;
 	margin: auto;
 }
 
 .MovieCard-score {
 	position: absolute;
-	top: -3%;
-	left: 10%;
+	top: clamp(-3%, -3% + 1vw, 3%);
+	left: clamp(10%, 8vw, 80%);
 
 	font-weight: 700;
 	font-size: 1.1em;
@@ -53,6 +87,12 @@
 	padding: 0.15em 0.4em;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 2em;
+}
+
+@media (min-width: 1200px) {
+	.MovieCard-score {
+		left: clamp(25%, 12% + 8vw, 80%);
+	}
 }
 
 .MovieCard-genres span {
@@ -82,13 +122,18 @@
 }
 
 .MovieCard-cast-item {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	margin: 1em;
-	border: 2px solid blue;
 }
 
 .MovieCard-cast-item img {
 	justify-self: flex-start;
+	object-fit: cover;
 	width: 100%;
+	height: 5em;
+
+	margin: 0.5em auto;
+	border: 2px solid #576134a1;
 }
 
 .MovieCard-cast-item p {

@@ -69,7 +69,7 @@ const MovieCard = (props) => {
                         <h3>Cast</h3>
                         <div className="MovieCard-casts">
                             {players.filter(player => player.profile_path).map(player => (
-                                <div key={player.id} className="movie-card-cast-item">
+                                <div key={player.id} className="MovieCard-cast-item">
                                     <img src={`https://image.tmdb.org/t/p/w500/${player.profile_path}`} alt={player.name}/>
                                     <p>{player.name}</p>
                                 </div>
