@@ -1,14 +1,14 @@
 // import { useEffect } from "react";
 import "./Movie.css"
-import MoviePhoto from "../images/hero.jpg"
 
 const Movie = (props) => {
+    const movie = props.movie;
     console.log(props);
     return (
-        <div className="Movie" onClick={props.onclick}>
-            <p className="Movie-score">Score:5</p>
-            <img className="Movie-img" src={MoviePhoto} alt="Movie info"></img>
-            <p className="Movie-name">Movie Name</p>
+        <div className="Movie">
+            <p className="Movie-score">Score:{movie.vote_average}</p>
+            <img className="Movie-img" src={"https://image.tmdb.org/t/p/w500/" + movie.poster_path} alt="Movie info"></img>
+            <p className="Movie-name">{movie.title}</p>
         </div>
     )
 }

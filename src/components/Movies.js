@@ -1,40 +1,16 @@
-import { render } from '@testing-library/react';
 import Movie from './Movie'
 import "./Movies.css"
 
-const Movies = () => {
-      
-    const click = (e) => {
-        let target = null;
-        if (e.target.classList.contains("Movie"))
-            target = e.target;
-        else if ( e.target.parentElement.classList.contains("Movie"))
-            target = e.target.parentElement;
-
-        console.log(target);
-        if (!target.classList.contains("click"))
-            target.classList.add("click");
-        else
-            target.classList.remove("click");
-
-        render(<Movie />, document.getElementsByClassName("Movie")[0]);
-    };
+const Movies = ( movies ) => {
+    movies = movies.movies;
 
     return (
         <div className="Movies container">
             <h2>Popular Movies</h2>
             <div className="Movies-all">
-                
-                <Movie onclick={click}  />
-                <Movie onclick={click}  />
-                <Movie onclick={click}  />
-                <Movie onclick={click}  />
-                <Movie onclick={click}  />
-                <Movie onclick={click}  />
-                <Movie onclick={click}  />
-                <Movie onclick={click}  />
-                <Movie onclick={click}  />
-
+                {movies.map(movie => (
+                    <Movie key={movie.id} movie={movie} />
+                ))}
             </div>
         </div>
     )
