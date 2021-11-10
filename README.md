@@ -13,7 +13,7 @@ npm install
 npm run start
 ```
 
-For running locally you can use the following command:
+For building locally you can use the following command:
 
 ```bash
 npm run build
