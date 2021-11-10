@@ -8,7 +8,7 @@ const About = () => {
                 <h3>About</h3>
                 <p>Author: Muhammed Oğuz</p>
                 <p>Version: 1.0</p>
-                <p>Hello Appcent :)</p>
+                <p>Hello Appcent 😊</p>
             </div>
         </div>
     )
