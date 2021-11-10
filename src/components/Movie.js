@@ -20,6 +20,7 @@ const Movie = (props) => {
             <p className="Movie-score">{movie.vote_average}</p>
             <img className="Movie-img" src={img} alt={movie.overview}></img>
             <p className="Movie-name">{movie.title}</p>
+            <p className="Movie-release">{movie.release_date}</p>
         </div>
         </>
     )

@@ -17,7 +17,7 @@ const App = () => {
         <Routes>
           <Route path="/movie-web-app/about" element={<About />} />
         </Routes>
-        {/* <Route path="/about" component={Content} /> */}
+
         <Footer />
     </Router>
   );

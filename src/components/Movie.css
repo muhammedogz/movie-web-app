@@ -17,6 +17,11 @@
 	transition: all 250ms ease-in-out;
 }
 
+.Movie:hover,
+.Movie:active {
+	transform: scale(1.2);
+}
+
 .Movie-img {
 	width: 9em;
 	height: 15em;
@@ -28,7 +33,8 @@
 }
 
 .Movie-score,
-.Movie-name {
+.Movie-name,
+.Movie-release {
 	position: absolute;
 }
 
@@ -54,7 +60,14 @@
 	bottom: -20%;
 }
 
-.Movie:hover,
-.Movie:active {
-	transform: scale(1.2);
+.Movie-release {
+	top: -15%;
+
+	font-size: 0.85em;
+	font-weight: 700;
+
+	padding: 0.2em 0.4em;
+
+	background-color: var(--color-movie-title-bg);
+	color: var(--color-secondary);
 }
