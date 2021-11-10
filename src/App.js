@@ -12,10 +12,10 @@ const App = () => {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Content />} />
+          <Route path="/movie-web-app/" element={<Content />} />
         </Routes>
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="/movie-web-app/about" element={<About />} />
         </Routes>
         {/* <Route path="/about" component={Content} /> */}
         <Footer />
