@@ -9,6 +9,7 @@ const MovieCard = (props) => {
     const [genres, setGenres] = useState([]);
     const [players, setPlayers] = useState([]);
 
+    // get players and genre info from API
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/${movie_id}/credits?api_key=738d84b4c807f67e7b3e99f34f54a601`)
         .then(res => res.json())
@@ -24,11 +25,6 @@ const MovieCard = (props) => {
             setGenres(data.genres);
         })
     }, [movie_id]);
-    
-    
-    console.log(`players`, players)
-    console.log(`movie`, movie)
-    console.log(`genres`, genres)
     
     const img = "https://image.tmdb.org/t/p/w500/" + movie.poster_path;
     // style={{backgroundImage:`url(${img})`}} 

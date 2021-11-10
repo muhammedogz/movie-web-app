@@ -3,6 +3,9 @@ import MovieCard from "./MovieCard";
 import "./Movie.css"
 
 const Movie = (props) => {
+
+    // set initial state for every movie before clicked
+    // when clicked, render movieCard component
     const [ showMovieCard, setShowMovieCard ] = useState(false);
 
     const handleClick = () => {

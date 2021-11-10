@@ -6,6 +6,7 @@ const Content = () => {
     const [movies, setMovies] = useState([]);
     
 
+    // get movie info from API
     useEffect(() => {
         const getMovies = async () => {
           const moviesFromServer = await fetchMovies(1)

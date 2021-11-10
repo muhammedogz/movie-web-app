@@ -3,6 +3,8 @@ import  React, { useState } from "react";
 import "./Header.css"
 
 const Header = () => {
+
+    // set an initial state for active link
     const [isActive, setIsActive] = useState(false);
 
     const handleClick = () => {
